@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SpaceBattle:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpaceBattle_jar</output-path>
+    <root id="archive" name="SpaceBattle.jar">
+      <element id="module-output" name="SpaceBattle" />
+      <element id="file-copy" path="$PROJECT_DIR$/settings.txt" />
+    </root>
+  </artifact>
+</component>

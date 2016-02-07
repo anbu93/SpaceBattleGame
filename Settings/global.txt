@@ -1,0 +1,8 @@
+global {
+	window {
+		width : 800
+		height : 600
+		type : AWT_WINDOW
+	}
+	log_file : log.txt
+}

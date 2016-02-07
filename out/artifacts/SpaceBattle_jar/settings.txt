@@ -1,0 +1,112 @@
+sprite {
+	menu {
+		background : background.png
+		title : menu_title.png
+		new_game : menu_new_game.png
+		exit : menu_exit.png
+	}
+	game {
+		background : background.png
+		player {
+			ship : player.png
+			speed : 20
+			shot : playerFire.png
+			shot_speed : 25
+			layer : 1
+		}
+		Xwing {
+			ship : x_wing.png
+			speed : 5.5
+			shot : x_wing_fire.png
+			shot_speed : 9
+			layer : 2
+			shot_delta_min : 2000
+			shot_delta_random : 2000
+			move_delta : 500
+			shot_angle : 800
+		}
+		Ywing {
+			ship : y_wing.png
+			speed : 4.5
+			shot : y_wing_fire.png
+			shot_speed : 14
+			layer : 2
+			shot_delta_min : 2000
+			shot_delta_random : 3000
+			move_delta : 1000
+			shot_angle : 100
+		}
+		game_over : game_over.png
+		pause : pause.png
+		crash : crash.png
+	}
+	error : fatal_error.png
+}
+
+scenario { // не используется
+	list : true
+	name : wave
+	size : 2
+	wave1 {
+		list : true
+		name : enemy
+		size : 9
+		enemy1 {
+			type : X-wing
+			position : 50 500
+		}
+		enemy2 {
+			type : X-wing
+			position : 150 500
+		}
+		enemy3 {
+			type : X-wing
+			position : 250 500
+		}
+		enemy4 {
+			type : X-wing
+			position : 350 500
+		}
+		enemy5 {
+			type : X-wing
+			position : 450 500
+		}
+		enemy6 {
+			type : X-wing
+			position : 450 500
+		}
+		enemy7 {
+			type : X-wing
+			position : 550 500
+		}
+		enemy8 {
+			type : X-wing
+			position : 650 500
+		}
+		enemy9 {
+			type : X-wing
+			position : 750 500
+		}
+	}
+	wave2 {
+		list : true
+		name : enemy
+		size : 5
+		enemy1 {
+			type : Y-wing
+			position : 150 500
+		}
+		enemy2 {
+			type : Y-wing
+			position : 350 450
+		}
+		enemy4 {
+			type : Y-wing
+			position : 550 500
+		}
+		enemy5 {
+			type : Y-wing
+			position : 750 450
+		}
+	}
+}

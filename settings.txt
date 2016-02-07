@@ -1,0 +1,445 @@
+sprite {
+	menu {
+		background : background.png
+		title : menu/title.png
+		new_game : menu/new_game_button.png
+		exit : menu/exit_button.png
+	}
+	game {
+		background : background.png
+		player {
+			path : player/
+			ship : player.png
+			speed : 20
+			shot : playerFire.png
+			shot_speed : 25
+			layer : 1
+			crash {
+				list : true
+				size : 3
+				name : crash
+				crash1 : crash1.png
+				crash2 : crash2.png
+				crash3 : crash3.png
+			}
+		}
+		player2 {
+			path : player2/
+			ship : player.png
+			speed : 20
+			shot : playerFire.png
+			shot_speed : 25
+			layer : 1
+			crash {
+				list : true
+				size : 3
+				name : crash
+				crash1 : crash1.png
+				crash2 : crash2.png
+				crash3 : crash3.png
+			}
+		}
+		enemy {
+			Xwing {
+				path : enemy/Xwing/
+				ship : x_wing.png
+				speed : 5.5
+				shot : x_wing_fire.png
+				shot_speed : 9
+				layer : 2
+				shot_delta_min : 800
+				shot_delta_random : 500
+				move_delta : 500
+				shot_angle : 800
+				crash {
+					list : true
+					size : 3
+					name : crash
+					crash1 : crash1.png
+					crash2 : crash2.png
+					crash3 : crash3.png
+				}
+			}
+			Ywing {
+				path : enemy/Ywing/
+				ship : y_wing.png
+				speed : 4.5
+				shot : y_wing_fire.png
+				shot_speed : 14
+				layer : 2
+				shot_delta_min : 800
+				shot_delta_random : 1000
+				move_delta : 1000
+				shot_angle : 100
+				crash {
+					list : true
+					size : 3
+					name : crash
+					crash1 : crash1.png
+					crash2 : crash2.png
+					crash3 : crash3.png
+				}
+			}
+			Awing {
+				path : enemy/Awing/
+				ship : a_wing.png
+				speed : 6
+				shot : a_wing_fire.png
+				shot_speed : 12
+				layer : 2
+				shot_delta_min : 1000
+				shot_delta_random : 1000
+				move_delta : 1000
+				shot_angle : 300
+				crash {
+					list : true
+					size : 3
+					name : crash
+					crash1 : crash1.png
+					crash2 : crash2.png
+					crash3 : crash3.png
+				}
+			}
+			Sokol {
+				path : enemy/Sokol/
+				ship : Sokol.png
+				speed : 6
+				shot : Sokol_fire.png
+				shot_speed : 11
+				layer : 2
+				shot_delta_min : 800
+				shot_delta_random : 1500
+				move_delta : 1000
+				shot_angle : 400
+				crash {
+					list : true
+					size : 3
+					name : crash
+					crash1 : crash1.png
+					crash2 : crash2.png
+					crash3 : crash3.png
+				}
+			}
+		}
+		game_over : game_over.png
+		pause : pause.png
+		crash : crash.png
+	}
+	error : fatal_error.png
+}
+
+enemy_map {
+	initial {
+		player {
+			position : 400 75
+		}
+	}
+	wave_map {
+		size : 4
+		name : ship
+		line : 10
+		ship1 {
+			type : Xwing
+			size : 30
+			start : 175 275
+			count : 50
+		}
+		ship2 {
+			type : Ywing
+			size : 10
+			start : 175 425
+			count : 50
+		}
+		ship3 {
+			type : Awing
+			size : 10
+			start : 175 475
+			count : 50
+		}
+		ship4 {
+			type : Sokol
+			size : 2
+			start : 275 525
+			count : 250
+		}
+	}
+	atack {
+		size : 1
+		name : atack
+		atack1 {
+			size : 6
+			name : position
+			position1 : 75 575
+			position2 : 75 325
+			position3 : 250 200
+			position4 : 550 200
+			position5 : 725 325
+			position6 : 725 575
+		}
+	}
+}
+
+scenario { 
+	initial {
+		next : level1
+		name : ship
+		size : 1
+		message : scenario/initial.png
+		ship1 {
+			type : player
+			position : 300 100
+		}
+		ship2 {
+			type : player2
+			position : 600 100
+		}
+	}
+	test1 {
+		next : test2
+		message : scenario/level1.png
+		name : ship
+		size : 4
+		ship1 {
+			type : Awing
+			position : 100 500
+		}
+		ship2 {
+			type : Ywing
+			position : 200 500
+		}
+		ship3 {
+			type : Xwing
+			position : 300 500
+		}
+		ship4 {
+			type : Sokol
+			position : 300 400
+		}
+	}
+	test2 {
+		next : final
+		message : scenario/level2.png
+		name : ship
+		size : 10
+		ship1 {
+			type : Awing
+			position : 100 500
+		}
+		ship2 {
+			type : Awing
+			position : 200 500
+		}
+		ship3 {
+			type : Awing
+			position : 300 500
+		}
+		ship4 {
+			type : Awing
+			position : 400 500
+		}
+		ship5 {
+			type : Sokol
+			position : 500 500
+		}
+		ship6 {
+			type : Awing
+			position : 100 400
+		}
+		ship7 {
+			type : Awing
+			position : 200 400
+		}
+		ship8 {
+			type : Awing
+			position : 300 400
+		}
+		ship9 {
+			type : Awing
+			position : 400 400
+		}
+		ship10 {
+			type : Awing
+			position : 500 400
+		}
+	}
+	level1 {
+		next : level2
+		message : scenario/level1.png
+		name : ship
+		size : 6
+		ship1 {
+			type : Xwing
+			position : 100 500
+		}
+		ship2 {
+			type : Xwing
+			position : 200 500
+		}
+		ship3 {
+			type : Awing
+			position : 300 500
+		}
+		ship4 {
+			type : Ywing
+			position : 400 500
+		}
+		ship5 {
+			type : Xwing
+			position : 500 500
+		}
+		ship6 {
+			type : Xwing
+			position : 600 500
+		}
+	}
+	level2 {
+		next : level3
+		message : scenario/level2.png
+		name : ship
+		size : 6
+		ship1 {
+			type : Ywing
+			position : 100 500
+		}
+		ship2 {
+			type : Ywing
+			position : 200 500
+		}
+		ship3 {
+			type : Awing
+			position : 300 500
+		}
+		ship4 {
+			type : Ywing
+			position : 400 500
+		}
+		ship5 {
+			type : Ywing
+			position : 500 500
+		}
+		ship6 {
+			type : Ywing
+			position : 600 500
+		}
+	}
+	level3 {
+		next : level4
+		message : scenario/level3.png
+		name : ship
+		size : 8
+		ship1 {
+			type : Ywing
+			position : 100 500
+		}
+		ship2 {
+			type : Ywing
+			position : 200 500
+		}
+		ship3 {
+			type : Ywing
+			position : 300 500
+		}
+		ship4 {
+			type : Awing
+			position : 400 500
+		}
+		ship5 {
+			type : Ywing
+			position : 500 500
+		}
+		ship6 {
+			type : Ywing
+			position : 600 500
+		}
+		ship7 {
+			type : Xwing
+			position : 300 400
+		}
+		ship8 {
+			type : Xwing
+			position : 600 400
+		}
+	}
+	level4 {
+		next : level5
+		message : scenario/level4.png
+		name : ship
+		size : 10
+		ship1 {
+			type : Ywing
+			position : 100 500
+		}
+		ship2 {
+			type : Ywing
+			position : 200 500
+		}
+		ship3 {
+			type : Ywing
+			position : 300 500
+		}
+		ship4 {
+			type : Ywing
+			position : 400 500
+		}
+		ship5 {
+			type : Ywing
+			position : 500 500
+		}
+		ship6 {
+			type : Xwing
+			position : 100 400
+		}
+		ship7 {
+			type : Xwing
+			position : 200 400
+		}
+		ship8 {
+			type : Awing
+			position : 300 400
+		}
+		ship9 {
+			type : Awing
+			position : 400 400
+		}
+		ship10 {
+			type : Xwing
+			position : 500 400
+		}
+	}
+	level5 {
+		next : final
+		message : scenario/level5.png
+		name : ship
+		size : 6
+		ship1 {
+			type : Awing
+			position : 100 500
+		}
+		ship2 {
+			type : Awing
+			position : 200 500
+		}
+		ship3 {
+			type : Sokol
+			position : 300 500
+		}
+		ship4 {
+			type : Awing
+			position : 400 500
+		}
+		ship5 {
+			type : Awing
+			position : 500 500
+		}
+		ship6 {
+			type : Awing
+			position : 600 500
+		}
+	}
+	final {
+		next : none
+		message : scenario/final.png
+		size : 0
+		name : ship
+	}
+}
