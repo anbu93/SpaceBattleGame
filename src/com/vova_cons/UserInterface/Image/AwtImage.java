@@ -9,7 +9,6 @@ class AwtImage implements Image {
         image = imageBuilder.getImage(imageName);
     }
 
-    @Override
     public java.awt.Image getImage() {
         return image;
     }

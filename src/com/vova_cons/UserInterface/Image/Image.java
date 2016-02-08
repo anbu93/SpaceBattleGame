@@ -5,6 +5,4 @@ public interface Image {
     static Image create(String imageName){
         return new AwtImage(imageName);
     }
-
-    java.awt.Image getImage();
 }
