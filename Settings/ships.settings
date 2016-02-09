@@ -1,5 +1,24 @@
 path : ships/
 
+template {
+	path : string (папка с кораблем)
+	ship {
+		image : string (default: ship.png) (обычно используется это имя. НО иногда бывает исключения)
+		size : double double (размер корабля в пикселях X Y)
+		speed : double (скорость корабля в пикселях Х пикс/за 200 мс)
+		crash {
+			name : string(default: crash) (имя изображения) (начит в папке лежит crash1.png crash2.png crash3.png crash4.png crash5.png)
+			size : int (количество изображений)
+		}
+		shot_count : int (количество выстрелов в магазине)
+		shot {
+			image : string (default: shot.png) (изображение выстрела)
+			size : double double (размер)
+			speed : double (скорость выстрела)
+		}
+	}
+}
+
 TIE-fighter {
 	path : tie_fighter/
 	ship {
@@ -10,9 +29,9 @@ TIE-fighter {
 			name : crash
 			size : 5
 		}
+		shot_count : 3
 	}
 	shot {
-		count : 3
 		image : shot.png
 		size : 8 15
 		speed : 20
@@ -28,9 +47,9 @@ TIE-bomber {
 			name : crash
 			size : 5
 		}
+		shot_count : 1
 	}
 	shot {
-		count : 1
 		image : shot.png
 		size : 15 30
 		speed : 15
@@ -46,9 +65,9 @@ TIE-eleminator {
 			name : crash
 			size : 5
 		}
+		shot_count : 4
 	}
 	shot {
-		count : 1
 		image : shot.png
 		size : 8 15
 		speed : 20
@@ -69,9 +88,9 @@ X-wing {
 			name : crash
 			size : 5
 		}
+		shot_count : 3
 	}
 	shot {
-		count : 5
 		image : shot.png
 		size : 8 15
 		speed : 20
@@ -87,9 +106,9 @@ Y-wing {
 			name : crash
 			size : 5
 		}
+		shot_count : 1
 	}
 	shot {
-		count : 1
 		image : shot.png
 		size : 15 30
 		speed : 15
@@ -105,9 +124,9 @@ A-wing {
 			name : crash
 			size : 5
 		}
+		shot_count : 5
 	}
 	shot {
-		count : 5
 		image : shot.png
 		size : 8 15
 		speed : 20
@@ -127,9 +146,9 @@ Sokol {
 			name : crash
 			size : 8
 		}
+		shot_count : 10
 	}
 	shot {
-		count : 10
 		image : shot.png
 		size : 8 15
 		speed : 20

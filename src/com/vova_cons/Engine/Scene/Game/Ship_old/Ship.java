@@ -8,7 +8,7 @@ import com.vova_cons.Engine.Scene.Game.Ship_old.Enemy.XWing;
 import com.vova_cons.Engine.Scene.Game.Ship_old.Player.Player1Ship;
 import com.vova_cons.Engine.Scene.Game.Ship_old.Player.Player2Ship;
 import com.vova_cons.Physics.Point;
-import com.vova_cons.Physics.Rectangle;
+import com.vova_cons.Physics.Rectangle.Rectangle;
 
 public abstract class Ship extends Object {
     public static final String PLAYER = "player";
@@ -47,7 +47,7 @@ public abstract class Ship extends Object {
 
     protected Ship(Element settings, Point position) {
         super(settings.sub("path").getValue()+settings.sub("ship").getValue(),
-                Rectangle.create(position, SHIP_SIZE, SHIP_SIZE));
+                Rectangle.createMoveable(position, SHIP_SIZE, SHIP_SIZE));
         this.layer = Integer.parseInt(settings.sub("layer").getValue());
         this.shipSpeed = Double.parseDouble(settings.sub("speed").getValue());
         this.shotImage = settings.sub("path").getValue()+settings.sub("shot").getValue();

@@ -4,13 +4,13 @@ import com.vova_cons.Common.DocumentParser.Element;
 import com.vova_cons.Common.WindowSize;
 import com.vova_cons.Engine.Object;
 import com.vova_cons.Physics.Point;
-import com.vova_cons.Physics.Rectangle;
+import com.vova_cons.Physics.Rectangle.Rectangle;
 
 public class Crash extends Object {
     private String[] sprites;
 
     public Crash(Element settings, String path){
-        super(null, Rectangle.create(WindowSize.topLeft, 0, 0));
+        super(null, Rectangle.createMoveable(WindowSize.topLeft, 0, 0));
         String settingName = settings.sub("name").getValue();
         int size = Integer.parseInt(settings.sub("size").getValue());
         sprites = new String[size];
@@ -19,7 +19,7 @@ public class Crash extends Object {
     }
 
     private Crash(String[] sprites, Point point){
-        super(sprites, Rectangle.create(point, 0, 0), false);
+        super(sprites, Rectangle.createMoveable(point, 0, 0), false);
     }
 
     @Override

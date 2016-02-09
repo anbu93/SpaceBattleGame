@@ -6,7 +6,7 @@ import com.vova_cons.Common.WindowSize;
 import com.vova_cons.Engine.Object;
 import com.vova_cons.Engine.Scene.Game.Ship_old.Enemy.Enemy;
 import com.vova_cons.Engine.Scene.Game.Ship_old.Ship;
-import com.vova_cons.Physics.Rectangle;
+import com.vova_cons.Physics.Rectangle.Rectangle;
 
 class ScenarioController {
     private Element scenario;
@@ -35,7 +35,7 @@ class ScenarioController {
     }
 
     private void showMessage(Element levelSettings) {
-        new Object(levelSettings.sub("message").getValue(), Rectangle.create(WindowSize.topLeft, 0, 0)) {
+        new Object(levelSettings.sub("message").getValue(), Rectangle.createMoveable(WindowSize.topLeft, 0, 0)) {
             int time = 40;
             @Override
             protected void update() {

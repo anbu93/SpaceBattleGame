@@ -1,4 +1,7 @@
-package com.vova_cons.Physics;
+package com.vova_cons.Physics.Direct;
+
+import com.vova_cons.Physics.Point;
+import com.vova_cons.Physics.Vector;
 
 class DirectImpl implements Direct{
     private Point finish;
@@ -7,6 +10,11 @@ class DirectImpl implements Direct{
     public DirectImpl(Point finish, double speed){
         this.finish = finish;
         this.speed = speed;
+    }
+
+    @Override
+    public Point next() {
+        return null;
     }
 
     @Override
@@ -26,5 +34,10 @@ class DirectImpl implements Direct{
     @Override
     public void changeSpeed(double speed) {
         this.speed = speed;
+    }
+
+    @Override
+    public boolean isFinished() {
+        return false;
     }
 }

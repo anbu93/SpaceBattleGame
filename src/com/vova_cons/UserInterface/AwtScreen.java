@@ -3,8 +3,9 @@ package com.vova_cons.UserInterface;
 import com.vova_cons.Common.WindowSize;
 import com.vova_cons.Controller.Controller;
 import com.vova_cons.Controller.NullController;
-import com.vova_cons.UserInterface.InputListeners.InputListeners;
 import com.vova_cons.Physics.Point;
+import com.vova_cons.UserInterface.Image.AwtImage;
+import com.vova_cons.UserInterface.InputListeners.InputListeners;
 
 import javax.swing.*;
 import java.awt.*;
@@ -54,7 +55,7 @@ class AwtScreen extends Canvas implements Screen {
         Point point = Point.getInvertYPoint(topLeft, WindowSize.HEIGHT);
         int x = (int) point.getX();
         int y = (int) point.getY();
-        window.drawImage(image.getImage(), x, y, null);
+        window.drawImage(((AwtImage)image).getImage(), x, y, null);
     }
 
     @Override

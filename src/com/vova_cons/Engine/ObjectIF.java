@@ -1,5 +1,6 @@
 package com.vova_cons.Engine;
 
+import com.vova_cons.GlobalInterfaces.Updateable;
 import com.vova_cons.Physics.Point;
 import com.vova_cons.UserInterface.Screen;
 

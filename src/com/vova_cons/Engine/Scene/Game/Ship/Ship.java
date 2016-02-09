@@ -1,43 +1,30 @@
 package com.vova_cons.Engine.Scene.Game.Ship;
 
-import com.vova_cons.Engine.ObjectIF;
+import com.vova_cons.Engine.Scene.Game.MoveableCollisedObject;
+import com.vova_cons.Engine.Scene.Game.Shot.Shot;
+import com.vova_cons.Engine.Scene.Sprite;
 import com.vova_cons.Physics.Point;
-import com.vova_cons.UserInterface.Screen;
+import com.vova_cons.Physics.Rectangle.Rectangle;
 
-public class Ship implements ObjectIF {
+public abstract class Ship extends MoveableCollisedObject {
+    private Sprite shipSprite;
+    private Sprite crashSprite;
+    private ShotPool shotPool;
 
-
-    @Override
-    public Point getTopLeft() {
-        return null;
+    protected Ship(String type, Point position){
+        ShipSettings settings = new ShipSettings(type);
+        shipSprite = new Sprite(settings.getImage());
+        crashSprite = new Sprite(settings.getCrashImages());
+        rectangle = Rectangle.create(position, settings.getWidth(), settings.getHeight());
+        this.speed = settings.getSpeed();
+        redirect(rectangle.getCenter());
+        this.shotPool = new ShotPool(settings.getShotSettings(), settings.getShotCount());
+        this.sprite = shipSprite;
     }
 
-    @Override
-    public Point getCenter() {
-        return null;
-    }
-
-    @Override
-    public void render(Screen screen) {
-    }
-
-    @Override
-    public int getLayer() {
-        return 0;
-    }
-
-    @Override
-    public double getWidth() {
-        return 0;
-    }
-
-    @Override
-    public double getHeight() {
-        return 0;
-    }
-
-    @Override
-    public void update(long deltaTime) {
-
+    public void fire(Point to){
+        Shot shot = shotPool.get();
+        if (shot == null) return;
+        shot.redirect(to);
     }
 }

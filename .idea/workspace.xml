@@ -9,7 +9,48 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Enemy/Sokol.java" line="33" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc17a382-57c4-4603-9624-67c4cbce17b8" name="Default" comment="" />
+    <list id="fc17a382-57c4-4603-9624-67c4cbce17b8" name="Default" comment="" />
+    <list default="true" id="20d2fd56-cf44-45d6-a5bc-533f56fb5e35" name="changelist" comment="v1u4 fix1: Рефакторинг класса Ship (разделение Rectangle от Direct).&#10;• Изменение в пакете Physics (Rectangle &amp; Direct)&#10;• Новая иерархия классов для игровых объектов.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/MoveableCollisedObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/Player.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/ShipFabrick.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/ShipSettings.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/ShotPool.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Shot/Shot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Shot/ShotSettings.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Sprite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Collisionable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Drawable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Finishable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Moveable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Rendereable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Physics/Direct/SampleDirect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle/Rectangle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle/SampleRectangle.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Settings/ships.settings" afterPath="$PROJECT_DIR$/Settings/ships.settings" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Object.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Object.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/ObjectIF.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/ObjectIF.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Background/Sprite.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Background/Sprite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/ScenarioController.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/ScenarioController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/Ship.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/Ship.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Crash.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Crash.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Fire.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Fire.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Ship.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Ship.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Physics/Point.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Physics/Point.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Physics/PointAdapter.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Physics/PointAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Physics/PointImpl.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Physics/PointImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/UserInterface/AwtScreen.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/UserInterface/AwtScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/UserInterface/Image/AwtImage.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/UserInterface/Image/AwtImage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Updateable.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Updateable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/vova_cons/Physics/Direct.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Physics/Direct/Direct.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/vova_cons/Physics/DirectImpl.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Physics/Direct/DirectImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/vova_cons/Physics/RectangleImpl.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle/MoveableRectangle.java" />
+    </list>
     <ignored path="SpaceBattle.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,7 +70,42 @@
     <favorites_list name="SpaceBattle" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Ship.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/Ship.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24623115">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShotPool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/ShotPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,6 +115,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Vladimir" />
+        <option value="vladimir" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -47,57 +132,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/AbstractScene.java" />
-        <option value="$PROJECT_DIR$/settings.txt" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Enemy/EnemyCreator.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Common/DocumentParser/Node.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Collision/CrashSprite.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/UserInterface/Drawable.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Crash.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/Point.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Enemy/XWing.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Enemy/YWing.java" />
-        <option value="$PROJECT_DIR$/../JDK/src.zip!/java/lang/Object.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/GameImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Collision/Collisions.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Enemy/Enemy.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Fire.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/PointImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Enemy/Sokol.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Enemy/AWing.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Player/PlayerController.java" />
-        <option value="$PROJECT_DIR$/../JDK/src.zip!/java/awt/Component.java" />
-        <option value="$PROJECT_DIR$/../JDK/src.zip!/java/security/ProtectionDomain.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Ship.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Player/PlayerShip.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Player/Player1Ship.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/Vector.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/VectorImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/RectangleImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Controller/NullController.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/UserInterface/InputListeners/KeyListenerAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Player/Player2Controller.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Ship/Player/Player2Ship.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Common/WindowSize.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Object.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/ObjectList.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/ObjectIF.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Collision/Collisions.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/Ship.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/UserInterface/Screen.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/UserInterface/ImageBuilder.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/UserInterface/AwtScreen.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/UserInterface/Image.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/BlackBoxSensor.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/Sensors/SensorImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/Sensors/TemperatureSensor.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/TemperatureSensor.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/Sensors/BlackBoxSensorImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/Sensors/AlarmSensorImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/Temperature/TemperatureSensor.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/Sensors/Sensor.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/Sensors/BlackBoxSensor.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/Temperature/AlarmTemperatureSensor.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/Temperature/BlackBoxTemperatureSensor.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/Speed/SpeedSensor.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Bridge/Sensors/AlarmSensor.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Proxy/Server.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Proxy/ServerImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Proxy/Proxy.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Proxy/LoggerProxy.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Iterator/Iterator.java" />
+        <option value="$PROJECT_DIR$/src/com/Patterns/Iterator/Vector.java" />
         <option value="$PROJECT_DIR$/src/com/vova_cons/UserInterface/Image/Image.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Rendereable.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Drawable.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Finishable.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/Point.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/PointAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/PointImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle2.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/RectangleImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/MoveableRectangle.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/SampleRectangle.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/Direct.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle/SampleRectangle.java" />
         <option value="$PROJECT_DIR$/src/com/vova_cons/UserInterface/Image/AwtImage.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/UserInterface/Image/ImageBuilder.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/GameScene.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Menu/MenuScene.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Common/Logger.java" />
-        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/ScenarioController.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/UserInterface/AwtScreen.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/ShipFabrick.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/ShipSettings.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/ShotSettings.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Shot/ShotSettings.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Moveable.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Collisionable.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Sprite.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/ShotPool.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/Direct/Direct.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/Direct/DirectImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Physics/Direct/SampleDirect.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/MoveableCollisedObject.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/Ship.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Shot/Shot.java" />
+        <option value="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/Player.java" />
       </list>
     </option>
   </component>
@@ -109,10 +194,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-7" />
+    <option name="width" value="1378" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -161,6 +245,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,16 +264,235 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vova_cons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vova_cons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vova_cons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vova_cons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vova_cons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vova_cons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ship" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpaceBattle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/settings.txt" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -198,6 +502,10 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.vova_cons.Engine.Ship.Player" />
       <recent name="com.vova_cons.Engine.Scene.Menu" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.Patterns.Bridge" />
+      <recent name="com.Patterns" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.vova_cons.UserInterface.Image" />
@@ -483,40 +791,55 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
+    <task id="Default" summary="Default task">
       <changelist id="fc17a382-57c4-4603-9624-67c4cbce17b8" name="Default" comment="" />
       <created>1454123418362</created>
       <option name="number" value="Default" />
-      <updated>1454123418362</updated>
+      <updated>1454890131740</updated>
     </task>
+    <task id="LOCAL-00001" summary="интерфейс Image сделан как флаг-интерфейс, и убран оттуда метод java.awt.Image getImage()">
+      <created>1454890084737</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1454890084737</updated>
+    </task>
+    <task active="true" id="LOCAL-00002" summary="changelist">
+      <changelist id="20d2fd56-cf44-45d6-a5bc-533f56fb5e35" name="changelist" comment="changelist" />
+      <created>1454890130997</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1454890131856</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-7" y="0" width="1378" height="735" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17303371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20189275" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24597365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24669604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1719243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20189275" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -530,6 +853,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="интерфейс Image сделан как флаг-интерфейс, и убран оттуда метод java.awt.Image getImage()" />
+    <MESSAGE value="v1u4 fix1: Рефакторинг класса Ship (разделение Rectangle от Direct).&#10;• Изменение в пакете Physics (Rectangle &amp; Direct)&#10;• Новая иерархия классов для игровых объектов." />
+    <option name="LAST_COMMIT_MESSAGE" value="v1u4 fix1: Рефакторинг класса Ship (разделение Rectangle от Direct).&#10;• Изменение в пакете Physics (Rectangle &amp; Direct)&#10;• Новая иерархия классов для игровых объектов." />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="6" />
@@ -541,398 +871,431 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/Drawable.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Patterns/Bridge/Sensors/Sensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4623431">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Patterns/Bridge/Sensors/AlarmSensor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <marker date="1454660549580" expanded="true" signature="45:97" placeholder="..." />
-            <marker date="1454660549580" expanded="true" signature="266:276" placeholder=" { " />
-            <marker date="1454660549580" expanded="true" signature="318:324" placeholder=" }" />
-            <marker date="1454660549580" expanded="false" signature="353:363" placeholder=" { " />
-            <marker date="1454660549580" expanded="false" signature="377:383" placeholder=" }" />
-          </folding>
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/Screen.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Patterns/Iterator/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32008368">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Patterns/Iterator/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24895397">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Patterns/Proxy/LoggerProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6799163">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Patterns/Proxy/Proxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Common/DocumentParser/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Patterns/Proxy/ServerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="76" selection-start-line="34" selection-start-column="76" selection-end-line="34" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.5334728">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Common/DocumentParser/Leaf.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Patterns/Proxy/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.14225942">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Crash.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Patterns/Proxy/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.07112971">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Enemy/YWing.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/awt/Image.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/GameImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Updateable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Enemy/XWing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34948605">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Enemy/Enemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/PointImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Fire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Enemy/AWing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Enemy/Sokol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12628488">
-          <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/InputListeners/MouseListenerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/InputListeners/InputListeners.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/AbstractScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Player/Player1Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/VectorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7503671">
-          <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2246696">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Controller/NullController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0734215">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09985316">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/InputListeners/KeyListenerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7004405">
-          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Player/PlayerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Player/Player2Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32599118">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/RectangleImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2496329">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27459618">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Player/PlayerShip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Player/Player2Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7041763">
-          <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
-          <folding>
-            <element signature="e#2762#2763#0" expanded="false" />
-            <element signature="e#2806#2807#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Common/WindowSize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19721578">
-          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/ObjectList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/ObjectIF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13805105">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Collision/Collisions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7436195">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/ImageBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1774942">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/AwtScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15197216">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/Drawable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <marker date="1454660549580" expanded="true" signature="45:97" placeholder="..." />
-            <marker date="1454660549580" expanded="true" signature="266:276" placeholder=" { " />
-            <marker date="1454660549580" expanded="true" signature="318:324" placeholder=" }" />
-            <marker date="1454660549580" expanded="false" signature="353:363" placeholder=" { " />
-            <marker date="1454660549580" expanded="false" signature="377:383" placeholder=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/Image/AwtImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21693735">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.05610561">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/Image/Image.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13805105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.22442244">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Menu/MenuController.java">
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12481645">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Menu/MenuScene.java">
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/SpaceBattle_jar.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0649652">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19970632">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/ScenarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.35146442">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Common/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71548116">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/Image/ImageBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7866109">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/GameScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.035564855">
-          <caret line="68" column="45" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6234307">
-          <caret line="119" column="39" selection-start-line="119" selection-start-column="39" selection-end-line="119" selection-end-column="39" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49790794">
+        <state vertical-scroll-proportion="0.39273927">
           <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.058721934">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Background/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25247526">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/Drawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19636963">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Drawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16831683">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Rendereable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14026402">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Finishable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08415841">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5330033">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/PointAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7293729">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/PointImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81353134">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5330033">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/ObjectIF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25247526">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle/MoveableRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7013201">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05610561">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/Rectangle/SampleRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11221122">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35564855">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/Image/AwtImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/UserInterface/AwtScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5792079">
+          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29867986">
+          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+          <folding>
+            <element signature="e#1968#1969#0" expanded="true" />
+            <element signature="e#2012#2013#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/ShipFabrick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/ShipSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#2224#2225#0" expanded="true" />
+            <element signature="e#2291#2292#0" expanded="true" />
+            <element signature="e#2315#2316#0" expanded="true" />
+            <element signature="e#2348#2349#0" expanded="true" />
+            <element signature="e#2371#2372#0" expanded="true" />
+            <element signature="e#2399#2400#0" expanded="true" />
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#2503#2504#0" expanded="true" />
+            <element signature="e#2538#2539#0" expanded="true" />
+            <element signature="e#2572#2573#0" expanded="true" />
+            <element signature="e#2608#2609#0" expanded="true" />
+            <element signature="e#2643#2644#0" expanded="true" />
+            <element signature="e#2667#2668#0" expanded="true" />
+            <element signature="e#2699#2700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Shot/ShotSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11221122">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding>
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Moveable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14026402">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/GlobalInterfaces/Collisionable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36468646">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5049505">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#1238#1239#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+            <element signature="e#1338#1339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/Direct/DirectImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.89768976">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="21" />
+          <folding>
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/Direct/SampleDirect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11221122">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Physics/Direct/Direct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/MoveableCollisedObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77557755">
+          <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="e#1662#1663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Shot/Shot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5049505">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24623115">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship/ShotPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding />
         </state>
       </provider>

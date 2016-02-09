@@ -31,4 +31,9 @@ class PointAdapter implements Point {
     public boolean equals(Point point) {
         return this.point.equals(point);
     }
+
+    @Override
+    public Point offset(double x, double y) {
+        return this.point.offset(x, y);
+    }
 }

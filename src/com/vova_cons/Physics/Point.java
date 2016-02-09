@@ -20,4 +20,6 @@ public interface Point extends Cloneable {
     Point offset(Point point);
     Point clone();
     boolean equals(Point point);
+
+    Point offset(double x, double y);
 }

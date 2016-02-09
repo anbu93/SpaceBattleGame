@@ -2,7 +2,7 @@ package com.vova_cons.Engine;
 
 import com.vova_cons.Engine.Scene.Game.GameScene;
 import com.vova_cons.Physics.Point;
-import com.vova_cons.Physics.Rectangle;
+import com.vova_cons.Physics.Rectangle.Rectangle;
 import com.vova_cons.UserInterface.Drawable;
 import com.vova_cons.UserInterface.Screen;
 

@@ -35,6 +35,11 @@ class PointImpl implements Point {
         return  equals(x, point.getX(), EQUALS_EPS) && equals(y, point.getY(), EQUALS_EPS);
     }
 
+    @Override
+    public Point offset(double x, double y) {
+        return this.offset(new PointImpl(x, y));
+    }
+
     private boolean equals(double a, double b, double eps){
         return Math.abs(a-b) <= eps;
     }
