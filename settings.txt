@@ -48,7 +48,7 @@ sprite {
 				shot_speed : 9
 				layer : 2
 				shot_delta_min : 800
-				shot_delta_random : 500
+				shot_delta_random : 1000
 				move_delta : 500
 				shot_angle : 800
 				crash {
@@ -68,7 +68,7 @@ sprite {
 				shot_speed : 14
 				layer : 2
 				shot_delta_min : 800
-				shot_delta_random : 1000
+				shot_delta_random : 1200
 				move_delta : 1000
 				shot_angle : 100
 				crash {
@@ -88,7 +88,7 @@ sprite {
 				shot_speed : 12
 				layer : 2
 				shot_delta_min : 1000
-				shot_delta_random : 1000
+				shot_delta_random : 1300
 				move_delta : 1000
 				shot_angle : 300
 				crash {
@@ -108,7 +108,7 @@ sprite {
 				shot_speed : 11
 				layer : 2
 				shot_delta_min : 800
-				shot_delta_random : 1500
+				shot_delta_random : 1300
 				move_delta : 1000
 				shot_angle : 400
 				crash {
@@ -124,6 +124,10 @@ sprite {
 		game_over : game_over.png
 		pause : pause.png
 		crash : crash.png
+		status_bar {
+			background : sprites/status_bar/background.png
+			health : sprites/status_bar/health.png
+		}
 	}
 	error : fatal_error.png
 }

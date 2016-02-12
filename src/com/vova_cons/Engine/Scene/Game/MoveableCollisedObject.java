@@ -1,16 +1,16 @@
 package com.vova_cons.Engine.Scene.Game;
 
+import com.vova_cons.Engine.ObjectIF;
 import com.vova_cons.Engine.Scene.Sprite;
 import com.vova_cons.GlobalInterfaces.Collisionable;
 import com.vova_cons.GlobalInterfaces.Finishable;
-import com.vova_cons.GlobalInterfaces.Rendereable;
 import com.vova_cons.GlobalInterfaces.Updateable;
 import com.vova_cons.Physics.Direct.Direct;
 import com.vova_cons.Physics.Point;
 import com.vova_cons.Physics.Rectangle.Rectangle;
 import com.vova_cons.UserInterface.Screen;
 
-public class MoveableCollisedObject implements Updateable, Rendereable, Collisionable, Finishable {
+public class MoveableCollisedObject implements Updateable, ObjectIF, Finishable {
     protected Rectangle rectangle = null;
     protected Sprite sprite = null;
     protected Direct direct = null;
@@ -51,7 +51,7 @@ public class MoveableCollisedObject implements Updateable, Rendereable, Collisio
         this.direct = Direct.create(rectangle.getCenter(), to, speed);
     }
 
-    protected Point getTopLeft() {
+    public Point getTopLeft() {
         return rectangle.getTopLeft();
     }
 

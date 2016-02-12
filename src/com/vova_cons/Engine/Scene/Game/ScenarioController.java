@@ -69,4 +69,8 @@ class ScenarioController {
             enemyCounter++;
     }
 
+    public void rebuildLevel() {
+        enemyCounter = 0;
+        buildLevel(scenario.sub(levelID));
+    }
 }

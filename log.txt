@@ -1,6 +1,4 @@
 0.0> Application started. 
-20.416> Game started 
-22.551> Level: initial 
-24.868> Level: level1 
-35.130> Level: level2 
-40.826> Game over!
+4.312> Game started 
+6.683> Level: initial 
+9.30> Level: level1 

@@ -11,6 +11,7 @@ public class PlayerShip  extends Ship {
     boolean isFire = false;
     long prevShotTime;
     private static final long SHOT_DELTA = 500;
+    private int hp = 3;
 
     public PlayerShip(Element settings, Point position, int number){
         super(settings, position);
@@ -45,5 +46,17 @@ public class PlayerShip  extends Ship {
 
     private long getTime(){
         return System.currentTimeMillis();
+    }
+
+    public void playerDown() {
+        hp--;
+    }
+
+    public boolean isGameOver() {
+        return hp == 0;
+    }
+
+    public int getHealths() {
+        return this.hp;
     }
 }

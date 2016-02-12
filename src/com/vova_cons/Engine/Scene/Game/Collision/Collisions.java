@@ -3,7 +3,6 @@ package com.vova_cons.Engine.Scene.Game.Collision;
 import com.vova_cons.Common.WindowSize;
 import com.vova_cons.Engine.ObjectIF;
 import com.vova_cons.Engine.Scene.Game.GameScene;
-import com.vova_cons.Engine.Scene.Game.Ship_old.Crash;
 import com.vova_cons.Engine.Scene.Game.Ship_old.Enemy.Enemy;
 import com.vova_cons.Engine.Scene.Game.Ship_old.Player.PlayerShip;
 import com.vova_cons.Engine.Scene.Game.Ship_old.Ship;
@@ -31,11 +30,10 @@ public class Collisions {
     }
     private void operate(ObjectIF first, ObjectIF second){
         if (isCollised(first, second)){
-            Crash crash;
             if (first instanceof Ship)
-                crash = ((Ship) first).getCrash();
+                ((Ship) first).getCrash();
             else
-                crash = ((Ship)second).getCrash();
+                ((Ship)second).getCrash();
             deleteObject(first);
             deleteObject(second);
         }
@@ -65,7 +63,8 @@ public class Collisions {
         game.deleteObject(object);
         if (object instanceof Enemy)
             game.enemyDown();
-        if (object instanceof PlayerShip)
-            game.gameOver();
+        if (object instanceof PlayerShip) {
+            game.playerDown();
+        }
     }
 }

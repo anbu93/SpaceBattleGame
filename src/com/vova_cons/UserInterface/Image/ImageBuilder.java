@@ -7,7 +7,6 @@ import java.awt.Image;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,6 +30,7 @@ class ImageBuilder {
                     .append("error on open image: " + imageName)
                     .append(" (" + errorMessage.getMessage() + ")")
                     .endl();
+            System.out.println("error on open image: "+imageName);
         }
         return Toolkit.getDefaultToolkit().createImage(sourceImage.getSource());
     }
