@@ -10,16 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list id="fc17a382-57c4-4603-9624-67c4cbce17b8" name="Default" comment="" />
-    <list default="true" id="20d2fd56-cf44-45d6-a5bc-533f56fb5e35" name="changelist" comment="v1u4fix1: добавлены дополнительные жизни игроку.&#10;v1u4fix2: добавлен статус-бар сверху.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/StatusBar/Numbers.java" />
+    <list default="true" id="20d2fd56-cf44-45d6-a5bc-533f56fb5e35" name="changelist" comment="v1u4 fix3: добавлена логика считывания очков игры. (добавление жизни при очередном получении 50 очков)&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.txt" afterPath="$PROJECT_DIR$/settings.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Collision/Collisions.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Collision/Collisions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/GameScene.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/GameScene.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Player/PlayerShip.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/Ship_old/Player/PlayerShip.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/StatusBar.java" afterPath="$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/StatusBar/StatusBar.java" />
     </list>
     <ignored path="SpaceBattle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +36,7 @@
       <file leaf-file-name="README.MD" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2724359">
+            <state vertical-scroll-proportion="0.2728732">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
@@ -55,10 +47,8 @@
         <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/StatusBar/StatusBar.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -773,7 +763,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455245691760</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="v1u4 fix3: добавлена логика считывания очков игры. (добавление жизни при очередном получении 50 очков)&#10;">
+      <created>1455345877820</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1455345877820</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -783,6 +779,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16743472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -795,7 +792,6 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16743472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -820,7 +816,8 @@
     <MESSAGE value="интерфейс Image сделан как флаг-интерфейс, и убран оттуда метод java.awt.Image getImage()" />
     <MESSAGE value="v1u4 fix1: Рефакторинг класса Ship (разделение Rectangle от Direct).&#10;• Изменение в пакете Physics (Rectangle &amp; Direct)&#10;• Новая иерархия классов для игровых объектов." />
     <MESSAGE value="v1u4fix1: добавлены дополнительные жизни игроку.&#10;v1u4fix2: добавлен статус-бар сверху." />
-    <option name="LAST_COMMIT_MESSAGE" value="v1u4fix1: добавлены дополнительные жизни игроку.&#10;v1u4fix2: добавлен статус-бар сверху." />
+    <MESSAGE value="v1u4 fix3: добавлена логика считывания очков игры. (добавление жизни при очередном получении 50 очков)&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1u4 fix3: добавлена логика считывания очков игры. (добавление жизни при очередном получении 50 очков)&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1167,6 +1164,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1181,6 +1179,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,6 +1187,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.1402439">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,9 +1208,9 @@
         <state vertical-scroll-proportion="0.6097561">
           <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2943#2944#0" expanded="true" />
-            <element signature="e#2991#2992#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2882#2883#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1218,10 +1218,8 @@
     <entry file="file://$PROJECT_DIR$/src/com/vova_cons/Engine/Scene/Game/StatusBar/StatusBar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1255,7 +1253,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.MD">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2724359">
+        <state vertical-scroll-proportion="0.2728732">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
