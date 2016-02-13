@@ -62,7 +62,7 @@ public class Collisions {
     private void deleteObject(ObjectIF object){
         game.deleteObject(object);
         if (object instanceof Enemy)
-            game.enemyDown();
+            game.enemyDown((Enemy)object);
         if (object instanceof PlayerShip) {
             game.playerDown();
         }

@@ -8,7 +8,9 @@ import com.vova_cons.Engine.ObjectIF;
 import com.vova_cons.Engine.Scene.AbstractScene;
 import com.vova_cons.Engine.Scene.Background.Background;
 import com.vova_cons.Engine.Scene.Game.Collision.Collisions;
+import com.vova_cons.Engine.Scene.Game.Ship_old.Enemy.Enemy;
 import com.vova_cons.Engine.Scene.Game.Ship_old.Player.PlayerShip;
+import com.vova_cons.Engine.Scene.Game.StatusBar.StatusBar;
 import com.vova_cons.Engine.Sprite;
 import com.vova_cons.UserInterface.Screen;
 
@@ -39,7 +41,7 @@ public class GameScene extends AbstractScene {
         background = new Background(settings.sub("background").getValue());
         gameOverSprite = new Sprite(settings.sub("game_over").getValue(), WindowSize.topLeft);
         pauseSprite = new Sprite(settings.sub("pause").getValue(), WindowSize.topLeft);
-        statusBar = new StatusBar(settings.sub("status_bar"));
+        statusBar = new StatusBar(settings.sub("status_bar"), game.getSettings("numbers"));
     }
 
     /** Override standart methods */
@@ -73,10 +75,7 @@ public class GameScene extends AbstractScene {
             screen.draw(gameOverSprite);
     }
     private void renderStatusBar(Screen screen){
-        if (player != null)
-            statusBar.render(screen, player.getHealths());
-        else
-            statusBar.render(screen, 0);
+        statusBar.render(screen, player);
     }
 
     /** ObjectCollections methods */
@@ -107,7 +106,8 @@ public class GameScene extends AbstractScene {
     }
 
     /** Ships destroy methods */
-    public void enemyDown() {
+    public void enemyDown(Enemy object) {
+        player.killEnemy(object);
         scenarioController.enemyDown();
     }
     public void playerDown() {
